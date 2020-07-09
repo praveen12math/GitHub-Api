@@ -18,21 +18,9 @@ const Footer = () => {
         <div className="col-2" />
         <div className="col">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <a style={{ color: "white" }} className="nav-link" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a style={{ color: "white" }} className="nav-link" href="#">
-                Link
-              </a>
-            </li>
-            <li className="nav-item">
-              <a style={{ color: "white" }} className="nav-link" href="#">
-                Link
-              </a>
-            </li>
+            <li className="nav-item">Home</li>
+            <li className="nav-item">Link</li>
+            <li className="nav-item">Link</li>
           </ul>
         </div>
       </div>

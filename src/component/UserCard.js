@@ -12,6 +12,7 @@ const UserCard = ({ user }) => {
           src={user.avatar_url}
           className="rounded"
           style={{ width: "100%" }}
+          alt=""
         />
         <br />
         <br />
@@ -34,7 +35,12 @@ const UserCard = ({ user }) => {
           <div>Following : {user.following}</div>
           <div>Started on : {user.created_at}</div>
           <div>Hireable: {user.hireable ? "Yes" : "No"}</div>
-          <a className="float-right" href={user.html_url} target="_blank">
+          <a
+            className="float-right"
+            href={user.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Goto Profile
           </a>
         </div>

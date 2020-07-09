@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect } from "react";
 import Axios from "axios";
 
 const Repos = ({ repos_url }) => {
@@ -38,7 +38,12 @@ const Repos = ({ repos_url }) => {
                 </div>
                 <div className="card-text">{repo.description}</div>
                 <div className="card-footer border-dark text-center">
-                  <a href={repo.html_url} target="_blank" className="card-link">
+                  <a
+                    href={repo.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                  >
                     Goto Repositories
                   </a>
                 </div>
