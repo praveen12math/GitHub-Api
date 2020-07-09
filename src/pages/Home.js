@@ -21,9 +21,9 @@ const Home = () => {
     }
   };
 
-  // if (!context.user?.uid) {
-  //   return <Redirect to="/signin" />;
-  // }
+  if (!context.user?.uid) {
+    return <Redirect to="/signin" />;
+  }
 
   return (
     <div className="container">
