@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <div className="col-2" />
         <div className="col">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav text-white">
             <li className="nav-item">Home</li>
             <li className="nav-item">Link</li>
             <li className="nav-item">Link</li>
@@ -26,6 +26,21 @@ const Footer = () => {
       </div>
       <br />
       <br />
+      <h5
+        style={{
+          fontFamily: "times new roman",
+          color: "white",
+          textAlign: "center",
+        }}
+      >
+        This App developed by Praveen Yadav with Reactjs &nbsp;
+        <img
+          className="logoimg"
+          src="logo192.png"
+          alt=""
+          style={{ width: "2%" }}
+        />
+      </h5>
       <br />
     </div>
   );
