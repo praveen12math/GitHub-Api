@@ -46,6 +46,15 @@ const Repos = ({ repos_url }) => {
                   >
                     Goto Repositories
                   </a>
+                  <br />
+                  <a
+                    href={repo.homepage}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                  >
+                    Goto Project Preview
+                  </a>
                 </div>
               </div>
             </div>
