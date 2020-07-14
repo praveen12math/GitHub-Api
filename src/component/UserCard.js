@@ -32,7 +32,6 @@ const UserCard = ({ user }) => {
           <div>Location : {user.location}</div>
           <div>Repositories : {user.public_repos}</div>
           <div>Followers : {user.followers}</div>
-          <div>Following : {user.following}</div>
           <div>Started on : {user.created_at}</div>
           <div>Hireable: {user.hireable ? "Yes" : "No"}</div>
           <a

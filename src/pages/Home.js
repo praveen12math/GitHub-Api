@@ -8,7 +8,7 @@ import Axios from "axios";
 
 const Home = () => {
   const context = useContext(UserContext);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("praveen12math");
   const [user, setUser] = useState(null);
 
   const fetchDetails = async () => {
@@ -30,24 +30,29 @@ const Home = () => {
       <div className="row mt-3">
         <div className="col-12">
           <div class="input-group mb-3">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Provide a github username"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-            <div className="input-group-append">
-              <button
-                className="btn btn-outline-primary"
-                type="button"
-                onClick={fetchDetails}
-              >
-                Fetch User &nbsp;
+            <form style={{ width: "100%" }}>
+              <label style={{ fontFamily: "times new roman" }}>Provide a github username</label>
+
+              <div className="input-group-append">
+                <input
+                  type="text"
+                  className="form-control"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  style={{ width: "60%" }}
+                />
+                <button
+                  className="btn btn-outline-primary"
+                  type="button"
+                  onClick={fetchDetails}
+                >
+                  Fetch User &nbsp;
                 <i style={{ color: "black" }} className="fab fa-github"></i>
-              </button>
-            </div>
+                </button>
+              </div>
+            </form>
           </div>
+
         </div>
       </div>
       <br />
