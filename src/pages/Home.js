@@ -15,7 +15,7 @@ const Home = () => {
     try {
       const { data } = await Axios.get(`https://api.github.com/users/${query}`);
       setUser(data);
-      console.log({ data });
+      console.log(user);
     } catch (error) {
       document.getElementById("errorMsg").innerHTML = error.Message;
     }
@@ -31,7 +31,9 @@ const Home = () => {
         <div className="col-12">
           <div class="input-group mb-3">
             <form style={{ width: "100%" }}>
-              <label style={{ fontFamily: "times new roman" }}>Provide a github username</label>
+              <label style={{ fontFamily: "times new roman" }}>
+                Provide a github username
+              </label>
 
               <div className="input-group-append">
                 <input
@@ -47,12 +49,11 @@ const Home = () => {
                   onClick={fetchDetails}
                 >
                   Fetch User &nbsp;
-                <i style={{ color: "black" }} className="fab fa-github"></i>
+                  <i style={{ color: "black" }} className="fab fa-github"></i>
                 </button>
               </div>
             </form>
           </div>
-
         </div>
       </div>
       <br />

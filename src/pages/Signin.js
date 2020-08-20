@@ -29,7 +29,7 @@ const Signin = () => {
   };
 
   if (context.user?.uid) {
-    return <Redirect to="/" />;
+    return <Redirect to="/" />
   } else {
     return (
       <container>
